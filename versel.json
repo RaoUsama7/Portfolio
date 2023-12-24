@@ -1,16 +1,15 @@
 {
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "prisma/schema.prisma",
-        "use": "@prisma/vercel-builder"
-      }
-    ],
-    "env": {
-      "DATABASE_URL": "8L5TNjwYZi5fzhLT9A8vPi3LHkMMBPgWs5K1k377u34mQhSHuQAy1Xo1dsDAQ"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "prisma/schema.prisma",
+      "use": "@prisma/vercel-builder"
     }
+  ],
+  "env": {
+    "DATABASE_URL": "@your-database-url"
   }
-  
+}
